@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient( #eef1f6e4);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* TITLE */
+h1 {
+    margin-top: 20px;
+    color: #2e68b8;
+    letter-spacing: 2px;
+}
+
+/* TURN TEXT */
+#turn {
+    color: #717f95;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* GAME CONTAINER */
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BOARD */
+.game {
+    height: 60vmin;
+    width: 60vmin;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 1.5vmin;
+
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(8px);
+
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* BOX */
+.box {
+    height: 18vmin;
+    width: 18vmin;
+
+    border: none;
+    border-radius: 15px;
+
+    background: linear-gradient(145deg, #ffffff, #f1f1f9);
+    color: #1f2937;
+
+    font-size: 7vmin;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+    transition: all 0.2s ease;
+}
+
+/* HOVER EFFECT */
+.box:hover {
+    transform: scale(1.05);
+    background: linear-gradient( #514b6e);
+}
+
+/* CLICK EFFECT */
+.box:active {
+    transform: scale(0.97);
+}
+
+/* SCOREBOARD */
+.scoreboard {
+    margin: 20px;
+    color: #637691;
+    font-size: 1.1rem;
+
+    background: rgba(255,255,255,0.5);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* MESSAGE */
+#msg {
+    color: #111827;
+    font-size: 1.8rem;
+    margin-top: 20px;
+    min-height: 40px;
+    font-weight: bold;
+}
+
+/* BUTTONS */
+#new-btn,
+#reset-btn {
+    padding: 0.9rem 1.2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin: 10px;
+
+    background: linear-gradient(135deg, #4748aa, #1e59b8);
+    color: white;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+
+    transition: 0.2s ease;
+}
+
+/* BUTTON HOVER */
+#new-btn:hover,
+#reset-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(67, 87, 118, 0.3);
+}
+
+/* WINNER STYLE */
+.winner {
+    background: linear-gradient(135deg, #bbf7d0, #8696ef) !important;
+    color: #061c5f;
+    box-shadow: 0 0 15px #3434d3;
+}
